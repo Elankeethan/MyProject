@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1> WELCOME </h1>
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div class="secondary-actions">
+                    <a href="/forgot-password">Forgot Password?</a>
+                    <a href="/signup">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-box {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #bb0a0f;
+    font-size: 25pt;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.secondary-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.secondary-actions a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.secondary-actions a:hover {
+    text-decoration: underline;
+}
+
+</style>
+</html>
